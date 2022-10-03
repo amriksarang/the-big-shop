@@ -12,7 +12,7 @@ export const UserProvider = ({children}) => {
     useEffect(() => {
         console.log(app);
         console.log(app.currentUser);
-        if(app.currentUser.providerType === "local-userpass"){
+        if(app?.currentUser?.providerType === "local-userpass"){
             setIsUserLoggedIn(true);
         }else{
             setIsUserLoggedIn(false);
