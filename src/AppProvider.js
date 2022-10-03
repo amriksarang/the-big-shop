@@ -8,6 +8,19 @@ export const AppProvider = ({appId, children}) => {
 
 
     useEffect(() => {
+        
+        const credentials = Realm.Credentials.anonymous();
+
+        const anonymousLogin = async () => {            
+            await app.logIn(credentials);
+        }
+
+        anonymousLogin();
+        
+    }, [app]);
+
+
+    useEffect(() => {
       setApp(new Realm.App(appId));
     }, [appId]);
 
