@@ -10,6 +10,7 @@ export const UserProvider = ({children}) => {
     const app = React.useContext(AppContext).app;
 
     useEffect(() => {
+        console.log(app);
         console.log(app.currentUser);
         if(app.currentUser.providerType === "local-userpass"){
             setIsUserLoggedIn(true);
