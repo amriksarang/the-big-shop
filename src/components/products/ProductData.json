@@ -1,0 +1,1145 @@
+[{
+	"category": "Mobiles",
+	"sub-category": "Smart Phones",
+	"product-id": 1,
+	"product-title": "Samsung Note 10 Lite | 10% Price Drop",
+	"mrp": "43,000",
+	"discount" : "10%",
+	"details": "12MP Ultra wide (123°) FF + F2.2  Wide (77°) 12MP AF F1.7 Dual Pixel + Tele (45°) 12MP AF F2.4 OIS, 2x Zoom camera | 32MP front facing camera \n 17.04 centimeters (6.7-inch) super Amoled infinity-O display and FHD+ capacitive multi-touch touchscreen with 2400 x 1080 pixels resolution | 16M color support \n Memory, Storage & SIM: 6GB RAM | 128GB internal memory expandable up to 1TB | Dual SIM dual-standby (4G+4G) \n Android v10.0 operating system with 2.7GHz+1.8GHz Exynos 9810 octa core processor \n 4500mAH lithium-ion battery \n 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase \n Box also Includes: S-pen, non-removable battery included, earphones, travel adapter, USB cable and user manual",
+	"features" : {
+		"RAM" : [4, 8],
+		"Camera" : 32,
+		"Battery" : 4500,
+		"Processor" : "Exynos",
+		"Screen Size" : 6.7,
+		"Storage" : [128],
+		"Rating" : 4,
+		"Brand" : "Samsung",
+		"Reviews" : 4142
+	},
+	"varients": [{
+		"type": "Color",
+		"value": [{
+			"id": "1_1",
+			"value": "Red"
+		}, {
+			"id": "1_2",
+			"value": "Grey"
+		}]
+	},{
+		"type": "RAM",
+		"value": [{
+			"id": "1_3",
+			"value": "4GB, 128GB",
+			"price" : "43,000"
+		}, {
+			"id": "1_4",
+			"value": "8GB, 128GB",
+			"price" : "46,000"
+		}]
+	}],
+	"images": {
+		"small": "img/products/1_medium_2.jpg",
+		"large" : [
+			"img/products/1_large_1.jpg",
+			"img/products/1_large_2.jpg",
+			"img/products/1_large_3.jpg",
+			"img/products/1_large_4.jpg",
+			"img/products/1_large_5.jpg",
+			"img/products/1_large_6.jpg"
+		],
+		"thumbs" : [
+			"img/products/1_thumb_1.jpg",
+			"img/products/1_thumb_2.jpg",
+			"img/products/1_thumb_3.jpg",
+			"img/products/1_thumb_4.jpg",
+			"img/products/1_thumb_5.jpg",
+			"img/products/1_thumb_6.jpg"
+		]
+	}
+},{
+	"category": "Mobiles",
+	"sub-category": "Smart Phones",
+	"product-id": 2,
+	"product-title": "OnePlus Nord 5G (Blue Marble, 12GB RAM, 256GB Storage)",
+	"mrp": "34,000",
+	"discount" : "8%",
+	"details": "48MP+8MP+5MP+2MP quad rear camera with 1080P Video at 30/60 fps, 4k 30fps | 32MP+8MP front dual camera with 4K video capture at 30/60 fps and 1080 video capture at 30/60 fps \n 6.44-inch 90Hz fluid Amoled display with 2400 x 1080 pixels resolution | 408ppi \n Memory, Storage & SIM: 12GB RAM | 256GB internal memory | OnePlus Nord currently support dual 4G SIM Cards or a Single 5G SIM. 5G+4G support will be available via OTA update at a future date. \n OxygenOS based on Android 10 operating system with 2.4GHz Kryo 475 Prime + 2.2GHz Kryo 475 Gold + 6x1.8GHz Kryo 475 Silver Qualcomm Snapdragon 765G 5G mobile platform octa core processor, Adreno 620 GPU \n 4115mAH lithium-ion battery | In-Display fingerprint sensor \n 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase \n Corning Gorilla Glass 5 | 12GB GB LPDDR4X, 256GB UFS 2.1",
+	"features" : {
+		"RAM" : [12, 16],
+		"Camera" : 48,
+		"Battery" : 4500,
+		"Processor" : "Snapdragon",
+		"Screen Size" : 6.44,
+		"Storage" : [256],
+		"Rating" : 3.5,
+		"Brand" : "One Plus",
+		"Reviews" : 2130
+	},
+	"varients": [{
+		"type": "Color",
+		"value": [{
+			"id": "2_1",
+			"value": "Blue"
+		}, {
+			"id": "2_2",
+			"value": "Grey"
+		}]
+	},{
+		"type": "RAM",
+		"value": [{
+			"id": "2_3",
+			"value": "12GB, 256GB",
+			"price": "34,000"
+		}, {
+			"id": "2_4",
+			"value": "16GB, 256GB",
+			"price" : "38,000"
+		}]
+	}],
+	"images": {
+		"small": "img/products/2_medium_2.jpg",
+		"large" : [
+			"img/products/2_large_1.jpg",
+			"img/products/2_large_2.jpg",
+			"img/products/2_large_3.jpg",
+			"img/products/2_large_4.jpg",
+			"img/products/2_large_5.jpg",
+			"img/products/2_large_6.jpg"
+		],
+		"thumbs" : [
+			"img/products/2_thumb_1.jpg",
+			"img/products/2_thumb_2.jpg",
+			"img/products/2_thumb_3.jpg",
+			"img/products/2_thumb_4.jpg",
+			"img/products/2_thumb_5.jpg",
+			"img/products/2_thumb_6.jpg"
+		]
+	}
+},{
+	"category": "Mobiles",
+	"sub-category": "Smart Phones",
+	"product-id": 3,
+	"product-title": "OnePlus 8T 5G (Aquamarine Green, 8GB RAM, 128GB Storage)",
+	"mrp": "44,000",
+	"discount" : "10%",
+	"details": "Rear quad camera setup having 48MP main camera with Sony IMX586 sensor, 16MP ultra wide angle Lends, 5MP macro lens, 2MP monochrome lens | 16MP front camera with Sony IMX471 sensor \n 16.63 centimeters (6.55 inch) 120Hz fluid AMOLED capacitive touchscreen with 2400 x 1080 pixels resolution, 402 ppi pixel density \n OxygenOS based on Android v11 operating system with 2.86GHz Qualcomm Snapdragon 865TM with Adreno 650 GPU quad core processor \n Memory, Storage & SIM: 8GB RAM | 128GB internal memory expandable up to 128GB | Dual SIM (nano+nano) dual-standby (5G+4G) \n 4500mAH lithium-polymer battery \n 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase \n 120 Hz fluid Amoled display, Qualcomm Snapdragon 865, Warp Charge 65 , OxygenOS based on Android 11, Adreno 650 GPU",
+	"features" : {
+		"RAM" : [8, 12],
+		"Camera" : 48,
+		"Battery" : 4500,
+		"Processor" : "Snapdragon",
+		"Screen Size" : 6.55,
+		"Storage" : [128],
+		"Rating" : 4.5,
+		"Brand" : "One Plus",
+		"Reviews" : 7856
+	},	
+	"varients": [{
+		"type": "Color",
+		"value": [{
+			"id": "3_1",
+			"value": "Aquamarine Green"
+		}, {
+			"id": "3_2",
+			"value": "Black"
+		}]
+	},{
+		"type": "RAM",
+		"value": [{
+			"id": "3_3",
+			"value": "8GB, 128GB",
+			"price": "44,000"
+		}, {
+			"id": "3_4",
+			"value": "12GB, 128GB",
+			"price" : "48,000"
+		}]
+	}],
+	"images": {
+		"small": "img/products/3_medium_2.jpg",
+		"large" : [
+			"img/products/3_large_1.jpg",
+			"img/products/3_large_2.jpg",
+			"img/products/3_large_3.jpg",
+			"img/products/3_large_4.jpg",
+			"img/products/3_large_5.jpg",
+			"img/products/3_large_6.jpg"
+		],
+		"thumbs" : [
+			"img/products/3_thumb_1.jpg",
+			"img/products/3_thumb_2.jpg",
+			"img/products/3_thumb_3.jpg",
+			"img/products/3_thumb_4.jpg",
+			"img/products/3_thumb_5.jpg",
+			"img/products/3_thumb_6.jpg"
+		]
+	}
+},{
+	"category": "Mobiles",
+	"sub-category": "Smart Phones",
+	"product-id": 4,
+	"product-title": "Redmi 9A (Midnight Black, 2GB RAM, 32GB Storage) | 2GHz Octa-core Helio G25 Processor",
+	"mrp": "6,799",
+	"discount" : "7%",
+	"details": "Country Of Origin - India, China \n 13MP rear camera with AI portrait, AI scene recognition, HDR, pro mode | 5MP front camera \n 16.58 centimeters (6.53 inch) HD+ multi-touch capacitive touchscreen with 1600 x 720 pixels resolution, 268 ppi pixel density and 20:9 aspect ratio \n Memory, Storage & SIM: 2GB RAM, 32GB internal memory expandable up to 512GB | Dual SIM (nano+nano) + Dedicated SD card slot \n Android v10 operating system with upto 2.0GHz clock speed Mediatek Helio G25 octa core processor \n 5000mAH lithium-polymer large battery with 10W wired charger in-box \n 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase \n Box also includes: Power adapter, USB cable, sim eject tool, warranty card and user guide",
+	"features" : {
+		"RAM" : [2, 3],
+		"Camera" : 48,
+		"Battery" : 5000,
+		"Processor" : "Helio",
+		"Screen Size" : 6.53,
+		"Storage" : [32],
+		"Rating" : 4,
+		"Brand" : "Redmi",
+		"Reviews" : 456
+	},	
+	"varients": [{
+		"type": "Color",
+		"value": [{
+			"id": "4_1",
+			"value": "Midnight Black"
+		}, {
+			"id": "4_2",
+			"value": "Grey"
+		}]
+	},{
+		"type": "RAM",
+		"value": [{
+			"id": "4_3",
+			"value": "2GB, 32GB",
+			"price": "6,799"
+		}, {
+			"id": "4_4",
+			"value": "3GB, 32GB",
+			"price" : "8,000"
+		}]
+	}],
+	"images": {
+		"small": "img/products/4_medium_2.jpg",
+		"large" : [
+			"img/products/4_large_1.jpg",
+			"img/products/4_large_2.jpg",
+			"img/products/4_large_3.jpg",
+			"img/products/4_large_4.jpg",
+			"img/products/4_large_5.jpg",
+			"img/products/4_large_6.jpg"
+		],
+		"thumbs" : [
+			"img/products/4_thumb_1.jpg",
+			"img/products/4_thumb_2.jpg",
+			"img/products/4_thumb_3.jpg",
+			"img/products/4_thumb_4.jpg",
+			"img/products/4_thumb_5.jpg",
+			"img/products/4_thumb_6.jpg"
+		]
+	}
+},{
+	"category": "Mobiles",
+	"sub-category": "Smart Phones",
+	"product-id": 5,
+	"product-title": "Samsung Galaxy M12 (Blue,4GB RAM, 64GB Storage) 6000 mAh with 8nm Processor | True 48 MP Quad Camera | 90Hz Refresh Rate",
+	"mrp": "10,900",
+	"discount" : "12%",
+	"details": "48MP+5MP+2MP+2MP Quad camera setup- True 48MP (F 2.0) main camera + 5MP (F2.2) Ultra wide camera+ 2MP (F2.4) depth camera + 2MP (2.4) Macro Camera| 8MP (F2.2) front camera \n 16.55 centimeters (6.5-inch) HD+ TFT LCD - infinity v-cut display,90Hz screen refresh rate, HD+ resolution with 720 x 1600 pixels resolution, 269 PPI with 16M colours \n Memory, Storage & SIM: 4GB RAM | 64GB internal memory expandable up to 1TB| Dual SIM (nano+nano) dual-standby (4G+4G) \n Android 11, v11.0 operating system,One UI 3.1, with 8nm Power Efficient Exynos850 (Octa Core 2.0GHz) \n 6000mAH lithium-ion battery, 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase",
+	"features" : {
+		"RAM" : [4, 6],
+		"Camera" : 48,
+		"Battery" : 6000,
+		"Processor" : "Exynos",
+		"Screen Size" : 6.5,
+		"Storage" : [64],
+		"Rating" : 3,
+		"Brand" : "Samsung",
+		"Reviews" : 1234
+	},	
+	"varients": [{
+		"type": "Color",
+		"value": [{
+			"id": "5_1",
+			"value": "Black"
+		}, {
+			"id": "5_2",
+			"value": "Grey"
+		}]
+	},{
+		"type": "RAM",
+		"value": [{
+			"id": "5_3",
+			"value": "4GB, 64GB",
+			"price": "10,900"
+		}, {
+			"id": "5_4",
+			"value": "6GB, 64GB",
+			"price" : "13,000"
+		}]
+	}],
+	"images": {
+		"small": "img/products/5_medium_2.jpg",
+		"large" : [
+			"img/products/5_large_1.jpg",
+			"img/products/5_large_2.jpg",
+			"img/products/5_large_3.jpg",
+			"img/products/5_large_4.jpg",
+			"img/products/5_large_5.jpg",
+			"img/products/5_large_6.jpg"
+		],
+		"thumbs" : [
+			"img/products/5_thumb_1.jpg",
+			"img/products/5_thumb_2.jpg",
+			"img/products/5_thumb_3.jpg",
+			"img/products/5_thumb_4.jpg",
+			"img/products/5_thumb_5.jpg",
+			"img/products/5_thumb_6.jpg"
+		]
+	}
+},{
+	"category": "Mobiles",
+	"sub-category": "Smart Phones",
+	"product-id": 6,
+	"product-title": "Samsung Galaxy M51 (Electric Blue, 6GB RAM, 128GB Storage)",
+	"mrp": "22,999",
+	"discount" : "14%",
+	"details": "Quad camera setup - 64MP (F1.8) main camera + 12MP (F2.2) ultra wide camera + 5MP (F2.4) depth camera + 5MP (F2.4) macro camera and 32MP (F2.2) front camera \n 16.95 cm (6.7-inch) sAMOLED Plus - Infinity-O display, FHD+ capacitive touchscreen with 1080 x 2400 pixels resolution, Contrast Ratio: 78960:1 \n Memory, Storage & SIM: 6GB RAM, 128GB internal memory expandable up to 512GB | Dedicated Memory slot \n Android v10.0 operating system with 2.2GHz+1.8GHz Qualcomm | SD730G octa core processor \n 7000mAH lithium-ion battery | 25W USB Type-C to C fast charger in the box \n Fast face unlock and Side Fingerprint sensor | Dual SIM (nano+nano) with dual standby and dual VoLTE | 3.5 mm headphone jack \n 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase \n Box also includes: Travel adapter, USB Type-C to C, ejection pin and user manual",
+	"features" : {
+		"RAM" : [4, 8],
+		"Camera" : 64,
+		"Battery" : 7000,
+		"Processor" : "Snapdragon",
+		"Screen Size" : 6.7,
+		"Storage" : [128],
+		"Rating" : 5,
+		"Brand" : "Samsung",
+		"Reviews" : 9806
+	},	
+	"varients": [{
+		"type": "Color",
+		"value": [{
+			"id": "6_1",
+			"value": "Blue"
+		}, {
+			"id": "6_2",
+			"value": "Grey"
+		}]
+	},{
+		"type": "RAM",
+		"value": [{
+			"id": "6_3",
+			"value": "4GB, 128GB",
+			"price": "22,999"
+		}, {
+			"id": "6_4",
+			"value": "8GB, 128GB",
+			"price" : "28,000"
+		}]
+	}],
+	"images": {
+		"small": "img/products/6_medium_2.jpg",
+		"large" : [
+			"img/products/6_large_1.jpg",
+			"img/products/6_large_2.jpg",
+			"img/products/6_large_3.jpg",
+			"img/products/6_large_4.jpg",
+			"img/products/6_large_5.jpg",
+			"img/products/6_large_6.jpg"
+		],
+		"thumbs" : [
+			"img/products/6_thumb_1.jpg",
+			"img/products/6_thumb_2.jpg",
+			"img/products/6_thumb_3.jpg",
+			"img/products/6_thumb_4.jpg",
+			"img/products/6_thumb_5.jpg",
+			"img/products/6_thumb_6.jpg"
+		]
+	}
+},{
+	"category": "Mobiles",
+	"sub-category": "Smart Phones",
+	"product-id": 7,
+	"product-title": "Redmi Note 9 Pro (Aurora Blue, 4GB RAM, 64GB Storage) - Latest 8nm Snapdragon 720G & Alexa Hands-Free",
+	"mrp": "12,999",
+	"discount" : "10%",
+	"details": "Country Of Origin - India \n 48MP rear camera with ultra-wide, super macro, portrait, night mode, 960fps slowmotion, AI scene recognition, pro color, HDR, pro mode | 16MP facing camera \n 16.9418 centimeters (6.67-inch) FHD+ full screen dot display LCD multi-touch capacitive touchscreen with 2400 x 1080 pixels resolution, 400 ppi pixel density and 20:9 aspect ratio | 2.5D curved glass \n Android v10 operating system with 2.3GHz Qualcomm Snapdragon 720G with 8nm octa core processor \n Memory, Storage & SIM: 4GB RAM | 64GB internal memory expandable up to 512GB with dedicated SD card slot | Dual SIM (nano+nano) dual-standby (4G+4G) \n 5020mAH lithium-polymer large battery providing talk-time of 29 hours and standby time of 492 hours | 18W fast charger in-box and Type-C connectivity \n 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase",
+	"features" : {
+		"RAM" : [4, 8],
+		"Camera" : 48,
+		"Battery" : 5020,
+		"Processor" : "Snapdragon",
+		"Screen Size" : 5.9,
+		"Storage" : [256],
+		"Rating" : 4.5,
+		"Brand" : "Redmi",
+		"Reviews" : 5478
+	},	
+	"varients": [{
+		"type": "Color",
+		"value": [{
+			"id": "7_1",
+			"value": "Aurora Blue"
+		}, {
+			"id": "7_2",
+			"value": "Grey"
+		}]
+	},{
+		"type": "RAM",
+		"value": [{
+			"id": "7_3",
+			"value": "4GB, 256GB",
+			"price": "12,999"
+		}, {
+			"id": "7_4",
+			"value": "8GB, 256GB",
+			"price" : "16,000"
+		}]
+	}],
+	"images": {
+		"small": "img/products/7_medium_2.jpg",
+		"large" : [
+			"img/products/7_large_1.jpg",
+			"img/products/7_large_2.jpg",
+			"img/products/7_large_3.jpg",
+			"img/products/7_large_4.jpg",
+			"img/products/7_large_5.jpg",
+			"img/products/7_large_6.jpg"
+		],
+		"thumbs" : [
+			"img/products/7_thumb_1.jpg",
+			"img/products/7_thumb_2.jpg",
+			"img/products/7_thumb_3.jpg",
+			"img/products/7_thumb_4.jpg",
+			"img/products/7_thumb_5.jpg",
+			"img/products/7_thumb_6.jpg"
+		]
+	}
+},{
+	"category": "Mobiles",
+	"sub-category": "Smart Phones",
+	"product-id": 8,
+	"product-title": "Samsung Galaxy M31s (Mirage Blue, 6GB RAM, 128GB Storage)",
+	"mrp": "18,499",
+	"discount" : "9%",
+	"details": "Quad camera setup - 64MP (F1.8) main camera + 12MP (F2.2) ultra wide camera + 5MP (F2.4) depth camera + 5MP (F2.4) macro camera | 32MP (F2.2) front camera \n 16.4 centimeters (6.5-inch) super Amoled - Infinity-O display, FHD+ capacitive multi-touch touchscreen with 1080 x 2400 pixels resolution, 407 ppi pixel density and Contrast Ratio: 78960:1 \n Memory, Storage & SIM: 6GB RAM, 128GB internal memory expandable up to 512GB | Dual SIM (nano+nano) dual-standby (4G+4G) \n Android v10.0 operating system with 1.7GHz+2.3GHz Exynos 9611 octa core processor \n 6000mAH lithium-ion battery with 5x fast charge | 25W Type-C fast charger in the box \n 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase \n Box also includes: Travel adapter, USB Type-C to Type-C Cable, ejection pin and user manual \n Fast face unlock and fingerprint sensor | Dual SIM (nano+nano) with dual standby and dual VoLTE, Dedicated Sim slot",
+	"features" : {
+		"RAM" : [6, 8],
+		"Camera" : 64,
+		"Battery" : 6000,
+		"Processor" : "Exynos",
+		"Screen Size" : 6.5,
+		"Storage" : [128],
+		"Rating" : 3.5,
+		"Brand" : "Samsung",
+		"Reviews" : 6548
+	},	
+	"varients": [{
+		"type": "Color",
+		"value": [{
+			"id": "8_1",
+			"value": "Mirage Blue"
+		}, {
+			"id": "8_2",
+			"value": "Black"
+		}]
+	},{
+		"type": "RAM",
+		"value": [{
+			"id": "8_3",
+			"value": "4GB, 128GB",
+			"price": "18,499"
+		}, {
+			"id": "8_4",
+			"value": "8GB, 128GB",
+			"price" : "22,000"
+		}]
+	}],
+	"images": {
+		"small": "img/products/8_medium_2.jpg",
+		"large" : [
+			"img/products/8_large_1.jpg",
+			"img/products/8_large_2.jpg",
+			"img/products/8_large_3.jpg",
+			"img/products/8_large_4.jpg",
+			"img/products/8_large_5.jpg",
+			"img/products/8_large_6.jpg"
+		],
+		"thumbs" : [
+			"img/products/8_thumb_1.jpg",
+			"img/products/8_thumb_2.jpg",
+			"img/products/8_thumb_3.jpg",
+			"img/products/8_thumb_4.jpg",
+			"img/products/8_thumb_5.jpg",
+			"img/products/8_thumb_6.jpg"
+		]
+	}
+},{
+	"category": "Mobiles",
+	"sub-category": "Smart Phones",
+	"product-id": 9,
+	"product-title": "Mi 10i 5G (Atlantic Blue, 6GB RAM, 128GB Storage) - 108MP Quad Camera | Snapdragon 750G Processor | Upto 6 Months No Cost EMI",
+	"mrp": "21,999",
+	"discount" : "11%",
+	"details": "Camera: 108 MP Quad Rear camera with Ultra-wide and Macro mode \n Processor: Octa-core Snapdragon 750G with 8nm process and support for next generation 5G Network \n Display: 16.9 centimeters (6.67-inch) FHD+ Full screen dot display with AdaptiveSync 120Hz refresh rate \n Battery: 4820 mAh large battery with 33W fast charger in-box and Type-C connectivity \n Memory, Storage & SIM: 6GB RAM | 128GB storage expandable up to 512GB with microSD card slot Warranty: 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase",
+	"features" : {
+		"RAM" : [6, 8],
+		"Camera" : 108,
+		"Battery" : 4820,
+		"Processor" : "Snapdragon",
+		"Screen Size" : 6.67,
+		"Storage" : [128],
+		"Rating" : 4,
+		"Brand" : "Mi",
+		"Reviews" : 852
+	},	
+	"varients": [{
+		"type": "Color",
+		"value": [{
+			"id": "9_1",
+			"value": "Atlantic Blue"
+		}, {
+			"id": "9_2",
+			"value": "Black"
+		}]
+	},{
+		"type": "RAM",
+		"value": [{
+			"id": "9_3",
+			"value": "6GB, 128GB",
+			"price": "21,999"
+		}, {
+			"id": "9_4",
+			"value": "8GB, 128GB",
+			"price" : "25,000"
+		}]
+	}],
+	"images": {
+		"small": "img/products/9_medium_2.jpg",
+		"large" : [
+			"img/products/9_large_1.jpg",
+			"img/products/9_large_2.jpg",
+			"img/products/9_large_3.jpg",
+			"img/products/9_large_4.jpg",
+			"img/products/9_large_5.jpg",
+			"img/products/9_large_6.jpg"
+		],
+		"thumbs" : [
+			"img/products/9_thumb_1.jpg",
+			"img/products/9_thumb_2.jpg",
+			"img/products/9_thumb_3.jpg",
+			"img/products/9_thumb_4.jpg",
+			"img/products/9_thumb_5.jpg",
+			"img/products/9_thumb_6.jpg"
+		]
+	}
+},{
+	"category": "Mobiles",
+	"sub-category": "Smart Phones",
+	"product-id": 10,
+	"product-title": "Vivo Y31 (Ocean Blue, 6GB, 128GB Storage) with No Cost EMI/Additional Exchange Offers",
+	"mrp": "16,999",
+	"discount" : "10%",
+	"details": "48MP+2MP+2MP rear camera | 16MP front camera \n 16.71 centimeters (6.58 inch) FHD+ display with 2408 x 1080 pixels resolution \n Memory, Storage & SIM: 6GB RAM | 128GB internal memory expandable up to 1TB | Dual SIM (nano+nano) dual-standby (4G+4G) \n Funtouch OS 11 based on Android 11 operating system with Qualcomm Snapdragon 662 octa core processor \n 5000mAH lithium-ion battery (Type C). 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase. Box also includes: Handset, Earphones, Documentation, micro USB to USB cable (Type C), USB power adapter, sim ejector pin, protective case, protective film (1 applied)",
+	"features" : {
+		"RAM" : [6, 8],
+		"Camera" : 48,
+		"Battery" : 5000,
+		"Processor" : "Snapdragon",
+		"Screen Size" : 6.58,
+		"Storage" : [128],
+		"Rating" : 3,
+		"Brand" : "Vivo",
+		"Reviews" : 4179
+	},	
+	"varients": [{
+		"type": "Color",
+		"value": [{
+			"id": "10_1",
+			"value": "Ocean Blue"
+		}, {
+			"id": "10_2",
+			"value": "Grey"
+		}]
+	},{
+		"type": "RAM",
+		"value": [{
+			"id": "10_3",
+			"value": "6GB, 128GB",
+			"price": "16,999"
+		}, {
+			"id": "10_4",
+			"value": "8GB, 128GB",
+			"price" : "21,000"
+		}]
+	}],
+	"images": {
+		"small": "img/products/10_medium_2.jpg",
+		"large" : [
+			"img/products/10_large_1.jpg",
+			"img/products/10_large_2.jpg",
+			"img/products/10_large_3.jpg",
+			"img/products/10_large_4.jpg",
+			"img/products/10_large_5.jpg",
+			"img/products/10_large_6.jpg"
+		],
+		"thumbs" : [
+			"img/products/10_thumb_1.jpg",
+			"img/products/10_thumb_2.jpg",
+			"img/products/10_thumb_3.jpg",
+			"img/products/10_thumb_4.jpg",
+			"img/products/10_thumb_5.jpg",
+			"img/products/10_thumb_6.jpg"
+		]
+	}
+},{
+	"category": "Mobiles",
+	"sub-category": "Smart Phones",
+	"product-id": 11,
+	"product-title": "OnePlus 8 Pro (Onyx Black 8GB RAM+128GB Storage)",
+	"mrp": "54,999",
+	"discount" : "10%",
+	"details": "48MP rear camera with 4k video at 30/60 fps, 1080p video at 30/60 fps, super slow motion: 720p video at 480 fps, 1080p video at 240fps, time-lapse: 1080p 30fps, 4k 30fps, cine aspect ratio video recording, video hdr, cat&dog face detect & focus, ultrashot hdr, nightscape, super micro, portrait, pro mode, panorama, ai scene detection, raw image, audio zoom, audio 3d, infrared photography camera | 16MP front camera \n 17.22 centimeters (6.78-inch) 120Hz fluid display with 3168 x 1440 pixels resolution, 513 ppi pixel density and vibrant color effect color support \n Memory, Storage & SIM: 8GB RAM | 128GB internal memory | Dual SIM (nano+nano) dual-standby (5G+5G) \n Oxygen OS based on Android v10 operating system with 2.86GHz of clock speed with Qualcomm Snapdragon 865, powered by Kryo 585 CPU octa core processor, Adreno 650 \n 4510mAH lithium-ion battery \n 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase \n Box also includes: Warp charge 30t power adapter, warp type-c cable (support usb 2.0), quick start guide, welcome letter, safety information and warranty card, logo sticker, case, screen protector (pre-applied), sim tray ejector",
+	"features" : {
+		"RAM" : [8, 12],
+		"Camera" : 48,
+		"Battery" : 4510,
+		"Processor" : "Snapdragon",
+		"Screen Size" : 6.78,
+		"Storage" : [256],
+		"Rating" : 3,
+		"Brand" : "One Plus",
+		"Reviews" : 9517
+	},	
+	"varients": [{
+		"type": "Color",
+		"value": [{
+			"id": "11_1",
+			"value": "Onyx Black"
+		}, {
+			"id": "11_2",
+			"value": "Blue"
+		}]
+	},{
+		"type": "RAM",
+		"value": [{
+			"id": "11_3",
+			"value": "8GB, 256GB",
+			"price": "54,999"
+		}, {
+			"id": "11_4",
+			"value": "12GB, 256GB",
+			"price" : "58,000"
+		}]
+	}],
+	"images": {
+		"small": "img/products/11_medium_2.jpg",
+		"large" : [
+			"img/products/11_large_1.jpg",
+			"img/products/11_large_2.jpg",
+			"img/products/11_large_3.jpg",
+			"img/products/11_large_4.jpg",
+			"img/products/11_large_5.jpg",
+			"img/products/11_large_6.jpg"
+		],
+		"thumbs" : [
+			"img/products/11_thumb_1.jpg",
+			"img/products/11_thumb_2.jpg",
+			"img/products/11_thumb_3.jpg",
+			"img/products/11_thumb_4.jpg",
+			"img/products/11_thumb_5.jpg",
+			"img/products/11_thumb_6.jpg"
+		]
+	}
+},{
+	"category": "Mobiles",
+	"sub-category": "Smart Phones",
+	"product-id": 12,
+	"product-title": "OPPO F19 Pro (Fluid Black, 8GB RAM, 256GB Storage) ",
+	"mrp": "23,490",
+	"discount" : "7%",
+	"details": "6.43 Inch (16.3cm) FHD+ Super AMOLED Punch-hole Display with 2400x1080 pixels. Larger screen to body ratio of 90.8%.|In-Display Fingerprint 3.0. \n Android v11 based ColorOS 11.1 operating system with 2.2GHz MediaTek Helio P95 octa core processor, IMG 9XM-HP8 GPU \n Memory, Storage & SIM: 8GB RAM | 256GB internal memory can be expandable up to 256GB | Dual SIM (nano+nano) dual-standby (4G+4G) \n Battery: 4310mAH lithium-polymer massive battery with 30W VOOC Flash Charge 4.0 | Super Night standby mode. \n 48MP Quad Camera ( 48MP Main + 8MP Wide Angle Macro + 2MP Portrait Mono Lens + 2MP Macro Mono Lens) | 16MP Front Camera.",
+	"features" : {
+		"RAM" : [8],
+		"Camera" : 48,
+		"Battery" : 4310,
+		"Processor" : "Helio",
+		"Screen Size" : 6.43,
+		"Storage" : [256],
+		"Rating" : 4,
+		"Brand" : "Oppo",
+		"Reviews" : 741
+	},	
+	"varients": [{
+		"type": "Color",
+		"value": [{
+			"id": "12_1",
+			"value": "Fluid Black"
+		}, {
+			"id": "12_2",
+			"value": "Grey"
+		}]
+	},{
+		"type": "RAM",
+		"value": [{
+			"id": "12_3",
+			"value": "8GB, 256GB",
+			"price": "23,490"
+		}]
+	}],
+	"images": {
+		"small": "img/products/12_medium_2.jpg",
+		"large" : [
+			"img/products/12_large_1.jpg",
+			"img/products/12_large_2.jpg",
+			"img/products/12_large_3.jpg",
+			"img/products/12_large_4.jpg",
+			"img/products/12_large_5.jpg",
+			"img/products/12_large_6.jpg"
+		],
+		"thumbs" : [
+			"img/products/12_thumb_1.jpg",
+			"img/products/12_thumb_2.jpg",
+			"img/products/12_thumb_3.jpg",
+			"img/products/12_thumb_4.jpg",
+			"img/products/12_thumb_5.jpg",
+			"img/products/12_thumb_6.jpg"
+		]
+	}
+},{
+	"category": "Mobiles",
+	"sub-category": "Smart Phones",
+	"product-id": 13,
+	"product-title": "Oppo A31 (Mystery Black, 6GB RAM, 128GB Storage)",
+	"mrp": "11,990",
+	"discount" : "12%",
+	"details": "12+2+2MP triple rear camera (12MP main camera+2MP macro lens+2MP depth camera) with Portrait bokeh, macro lens, dazzle color mode, AI beautification | 8MP front camera \n 16.5 centimeters (6.5-inch) waterdrop multi touch screen with an 89% screen to body ratio | 1600 x 720 pixels resolution, 269 ppi pixel density \n Memory, Storage & SIM: 6GB RAM | 128GB internal memory expandable up to 256GB | Dual SIM (nano+nano) dual-standby (4G+4G) \n Android Pie v9.0 based on ColorOS 6.1 operating system with 2.3GHz Mediatek 6765 octa core processor, IMG GE8320 \n 4230mAH lithium-polymer battery providing talk-time of 45 hours and standby time of 450 hours \n 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase \n Box also includes: USB cable, Sim tray ejecter, pre-applied screen protector and protective case, booklet with warranty card and quick guide. The box does not include earphones",
+	"features" : {
+		"RAM" : [4, 6],
+		"Camera" : 12,
+		"Battery" : 4230,
+		"Processor" : "Mediatek",
+		"Screen Size" : 6.5,
+		"Storage" : [128],
+		"Rating" : 4.5,
+		"Brand" : "Oppo",
+		"Reviews" : 6712
+	},	
+	"varients": [{
+		"type": "Color",
+		"value": [{
+			"id": "13_1",
+			"value": "Fantasy White"
+		}, {
+			"id": "13_2",
+			"value": "Lake Green"
+		}, {
+			"id": "13_3",
+			"value": "Mystery Black"
+		}]
+	},{
+		"type": "RAM",
+		"value": [{
+			"id": "13_4",
+			"value": "4GB, 128GB",
+			"price": "11,990"
+		}, {
+			"id": "13_5",
+			"value": "6GB, 128GB",
+			"price" : "14,000"
+		}]
+	}],
+	"images": {
+		"small": "img/products/13_medium_2.jpg",
+		"large" : [
+			"img/products/13_large_1.jpg",
+			"img/products/13_large_2.jpg",
+			"img/products/13_large_3.jpg",
+			"img/products/13_large_4.jpg",
+			"img/products/13_large_5.jpg",
+			"img/products/13_large_6.jpg"
+		],
+		"thumbs" : [
+			"img/products/13_thumb_1.jpg",
+			"img/products/13_thumb_2.jpg",
+			"img/products/13_thumb_3.jpg",
+			"img/products/13_thumb_4.jpg",
+			"img/products/13_thumb_5.jpg",
+			"img/products/13_thumb_6.jpg"
+		]
+	}
+},{
+	"category": "Mobiles",
+	"sub-category": "Smart Phones",
+	"product-id": 14,
+	"product-title": "Samsung Galaxy S21 Plus 5G (Phantom Black, 8GB RAM, 128GB Storage)",
+	"mrp": "81,999",
+	"discount" : "9%",
+	"details": "Triple rear camera setup- Main Camera 12MP Dual Pixel + Ultra Wide 12MP Camera + Tele1 3X 64MP Camera | 10MP front Dual Pixel Camera \n (6.7-inch) Dynamic AMOLED 2X Display, FHD+ resolution with 2400 X 1080 pixels resolution, 394 PPI with 16M colours \n 8GB RAM | 128GB internal Storage | Dual SIM (nano+nano) dual-standby (5G+5G) \n Android Pie v10.0 operating system with 2.9GHz Exynos 2100 octa core processor \n 4800mAH lithium-ion battery, 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase",
+	"features" : {
+		"RAM" : [8],
+		"Camera" : 64,
+		"Battery" : 4800,
+		"Processor" : "Exynos",
+		"Screen Size" : 6.7,
+		"Storage" : [128, 256],
+		"Rating" : 4.5,
+		"Brand" : "Samsung",
+		"Reviews" : 10452
+	},	
+	"varients": [{
+		"type": "Color",
+		"value": [{
+			"id": "14_1",
+			"value": "Phantom Black"
+		}, {
+			"id": "14_2",
+			"value": "Phantom Silver"
+		}, {
+			"id": "14_3",
+			"value": "Phantom Violet"
+		}]
+	},{
+		"type": "RAM",
+		"value": [{
+			"id": "14_4",
+			"value": "8GB, 128GB",
+			"price": "81,999"
+		}, {
+			"id": "14_5",
+			"value": "8GB, 256GB",
+			"price" : "84,000"
+		}]
+	}],
+	"images": {
+		"small": "img/products/14_medium_2.jpg",
+		"large" : [
+			"img/products/14_large_1.jpg",
+			"img/products/14_large_2.jpg",
+			"img/products/14_large_3.jpg",
+			"img/products/14_large_4.jpg",
+			"img/products/14_large_5.jpg",
+			"img/products/14_large_6.jpg"
+		],
+		"thumbs" : [
+			"img/products/14_thumb_1.jpg",
+			"img/products/14_thumb_2.jpg",
+			"img/products/14_thumb_3.jpg",
+			"img/products/14_thumb_4.jpg",
+			"img/products/14_thumb_5.jpg",
+			"img/products/14_thumb_6.jpg"
+		]
+	}
+},{
+	"category": "Mobiles",
+	"sub-category": "Smart Phones",
+	"product-id": 15,
+	"product-title": "Samsung Galaxy Note 20 Ultra 5G (12GB RAM, 256GB Storage)",
+	"mrp": "1,04,999",
+	"discount" : "8%",
+	"details": "108+12+12MP triple rear camera | 10MP front camera \n 17.45 centimeters (6.9-inch) WQHD+ dynamic Amoled display with 3088 x 1440 pixels resolution \n Memory, Storage & SIM: 12GB RAM | 256GB internal memory expandable up to 1TB | Dual SIM (nano+nano) dual-standby (4G+4G) \n Android v10.0 operating system with Exynos 990 octa core processor \n 4500mAH lithium-ion battery (Non-removable) \n 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase \n Box also includes: Adaptor, Sim ejector pin, user manual, charging cable",
+	"features" : {
+		"RAM" : [12],
+		"Camera" : 108,
+		"Battery" : 4500,
+		"Processor" : "Exynos",
+		"Screen Size" : 6.9,
+		"Storage" : [256],
+		"Rating" : 4,
+		"Brand" : "Samsung",
+		"Reviews" : 11736
+	},	
+	"varients": [{
+		"type": "Color",
+		"value": [{
+			"id": "15_1",
+			"value": "Mystic Black"
+		}, {
+			"id": "15_2",
+			"value": "Mystic Bronze"
+		}]
+	},{
+		"type": "RAM",
+		"value": [{
+			"id": "15_4",
+			"value": "12GB, 256GB",
+			"price": "1,04,999"
+		}]
+	}],
+	"images": {
+		"small": "img/products/15_medium_2.jpg",
+		"large" : [
+			"img/products/15_large_1.jpg",
+			"img/products/15_large_2.jpg",
+			"img/products/15_large_3.jpg",
+			"img/products/15_large_4.jpg",
+			"img/products/15_large_5.jpg",
+			"img/products/15_large_6.jpg"
+		],
+		"thumbs" : [
+			"img/products/15_thumb_1.jpg",
+			"img/products/15_thumb_2.jpg",
+			"img/products/15_thumb_3.jpg",
+			"img/products/15_thumb_4.jpg",
+			"img/products/15_thumb_5.jpg",
+			"img/products/15_thumb_6.jpg"
+		]
+	}
+},{
+	"category": "Mobiles",
+	"sub-category": "Smart Phones",
+	"product-id": 16,
+	"product-title": "Redmi Note 10 (Frost White, 4GB RAM, 64GB Storage) - Super Amoled Display | 48MP Sony Sensor IMX582 | Snapdragon 678 Processor",
+	"mrp": "11,999",
+	"discount" : "9%",
+	"details": "Display: FHD+ (1080x2400) AMOLED Dot display; 16.33 centimeters (6.43 inch); 20:9 aspect ratio \n Camera: 48 MP Quad Rear camera with 8MP Ultra-wide, 2MP Macro and Portrait lens| 13 MP Front camera \n Battery: 5000 mAh large battery with 33W fast charger in-box and Type-C connectivity \n Processor: Qualcomm Snapdragon 678 with Kryo 460 Octa-core; 11nm process; Up to 2.2GHz clock speed \n Memory, Storage & SIM: 4GB RAM | 64GB UFS 2.2 storage expandable up to 512GB with dedicated SD card slot | Dual SIM (nano+nano) dual standby (4G+4G)",
+	"features" : {
+		"RAM" : [4],
+		"Camera" : 48,
+		"Battery" : 5000,
+		"Processor" : "Snapdragon",
+		"Screen Size" : 6.43,
+		"Storage" : [64],
+		"Rating" : 4.5,
+		"Brand" : "Redmi",
+		"Reviews" : 7293
+	},
+	"varients": [{
+		"type": "Color",
+		"value": [{
+			"id": "16_1",
+			"value": "Grey"
+		}]
+	},{
+		"type": "RAM",
+		"value": [{
+			"id": "16_2",
+			"value": "4GB, 64GB",
+			"price" : "11,999"
+		}]
+	}],
+	"images": {
+		"small": "img/products/16_medium_2.jpg",
+		"large" : [
+			"img/products/16_large_1.jpg",
+			"img/products/16_large_2.jpg",
+			"img/products/16_large_3.jpg",
+			"img/products/16_large_4.jpg",
+			"img/products/16_large_5.jpg",
+			"img/products/16_large_6.jpg"
+		],
+		"thumbs" : [
+			"img/products/16_thumb_1.jpg",
+			"img/products/16_thumb_2.jpg",
+			"img/products/16_thumb_3.jpg",
+			"img/products/16_thumb_4.jpg",
+			"img/products/16_thumb_5.jpg",
+			"img/products/16_thumb_6.jpg"
+		]
+	}
+},{
+	"category": "Mobiles",
+	"sub-category": "Smart Phones",
+	"product-id": 17,
+	"product-title": "Honor 7C (Black, 4GB RAM, 64GB Storage)",
+	"mrp": "10,988",
+	"discount" : "9%",
+	"details": "13MP+2MP dual rear camera and 8MP front facing camera \n 15.2146 centimeters (5.99-inch) LED capacitive touchscreen with 720 x 1440 pixels resolution, 268 ppi pixel density and 16M color support \n Memory, Storage & SIM: 4GB RAM | 64GB storage expandable up to 256GB | Dual nano SIM with dual standby (4G+4G) \n Android v8.0 Oreo operating system with 1.8GHz Qualcomm SDM450 Octa Core processor \n 3000mAH lithium-polymer battery \n 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase \n Box also includes: Charger, Type-C cable, Quick Start Guide, Warranty Card, Eject tool, TPU Protective case and TP Protective film (Pre Applied)",
+	"features" : {
+		"RAM" : [4],
+		"Camera" : 13,
+		"Battery" : 3000,
+		"Processor" : "SDM450",
+		"Screen Size" : 5.99,
+		"Storage" : [64],
+		"Rating" : 3.5,
+		"Brand" : "Honor",
+		"Reviews" : 145
+	},
+	"varients": [{
+		"type": "Color",
+		"value": [{
+			"id": "17_1",
+			"value": "Black"
+		}]
+	},{
+		"type": "RAM",
+		"value": [{
+			"id": "17_2",
+			"value": "4GB, 64GB",
+			"price" : "10,988"
+		}]
+	}],
+	"images": {
+		"small": "img/products/17_medium_2.jpg",
+		"large" : [
+			"img/products/17_large_1.jpg",
+			"img/products/17_large_2.jpg",
+			"img/products/17_large_3.jpg",
+			"img/products/17_large_4.jpg",
+			"img/products/17_large_5.jpg",
+			"img/products/17_large_6.jpg"
+		],
+		"thumbs" : [
+			"img/products/17_thumb_1.jpg",
+			"img/products/17_thumb_2.jpg",
+			"img/products/17_thumb_3.jpg",
+			"img/products/17_thumb_4.jpg",
+			"img/products/17_thumb_5.jpg",
+			"img/products/17_thumb_6.jpg"
+		]
+	}
+},{
+	"category": "Mobiles",
+	"sub-category": "Smart Phones",
+	"product-id": 18,
+	"product-title": "Huawei Y9 Prime 2019 (Emerald Green, 4GB RAM, 128GB Storage)",
+	"mrp": "18,999",
+	"discount" : "11%",
+	"details": "16MP front Auto Pop-up camera with f/2.2 aperture | 16MP+8MP+2MP triple rear camera with f/1.8 aperture, f/2.4 aperture and f/2.4 aperture \n 16.7 centimeters (6.59-inch) TFT LCD LTPS multi-touch capacitive touchscreen with 2340 x 1080 pixels resolution, 391 ppi pixel density | 16.7M color support \n Memory, Storage & SIM: 4GB RAM | 128GB internal memory expandable up to 512GB | Dual SIM (nano+nano) dual-standby (4G+4G) \n Android Pie v9.0 +EMUI 9.0.1 operating system with 2.2GHz Cortex A73 + 1.7GHz Cortex A53 Hisilicon Kirin 710F octa core processor \n 4000mAH lithium-ion battery \n 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase \n Box also Includes: Handset, Charger, USB Cable, Quick Start Guide, Warranty Card, Eject tool, TP Protective Case. The box does not include earphones. Country of Origin: China",
+	"features" : {
+		"RAM" : [4],
+		"Camera" : 16,
+		"Battery" : 4000,
+		"Processor" : "Kirin",
+		"Screen Size" : 6.59,
+		"Storage" : [128],
+		"Rating" : 4,
+		"Brand" : "Huawei",
+		"Reviews" : 356
+	},
+	"varients": [{
+		"type": "Color",
+		"value": [{
+			"id": "18_1",
+			"value": "Emerald Green"
+		}]
+	},{
+		"type": "RAM",
+		"value": [{
+			"id": "18_2",
+			"value": "4GB, 128GB",
+			"price" : "18,999"
+		}]
+	}],
+	"images": {
+		"small": "img/products/18_medium_2.jpg",
+		"large" : [
+			"img/products/18_large_1.jpg",
+			"img/products/18_large_2.jpg",
+			"img/products/18_large_3.jpg",
+			"img/products/18_large_4.jpg",
+			"img/products/18_large_5.jpg",
+			"img/products/18_large_6.jpg"
+		],
+		"thumbs" : [
+			"img/products/18_thumb_1.jpg",
+			"img/products/18_thumb_2.jpg",
+			"img/products/18_thumb_3.jpg",
+			"img/products/18_thumb_4.jpg",
+			"img/products/18_thumb_5.jpg",
+			"img/products/18_thumb_6.jpg"
+		]
+	}
+},{
+	"category": "Mobiles",
+	"sub-category": "Smart Phones",
+	"product-id": 19,
+	"product-title": "Nokia 4.2 (Black, 3GB RAM, 32GB Storage)",
+	"mrp": "12,490",
+	"discount" : "8%",
+	"details": "5.71-inch (14.5 cm) HD+ \n Latest Android 10 ready \n Dedicated Google Assistant Button \n 3GB RAM, 32GB internal memory expandable up to 400GB \n 13MP primary camera and 8MP front camera \n Customer care number - 1800 1028 169",
+	"features" : {
+		"RAM" : [3],
+		"Camera" : 13,
+		"Battery" : 4000,
+		"Processor" : "Kirin",
+		"Screen Size" : 5.71,
+		"Storage" : [32],
+		"Rating" : 3,
+		"Brand" : "Nokia",
+		"Reviews" : 278
+	},
+	"varients": [{
+		"type": "Color",
+		"value": [{
+			"id": "19_1",
+			"value": "Black"
+		}]
+	},{
+		"type": "RAM",
+		"value": [{
+			"id": "19_2",
+			"value": "3GB, 32GB",
+			"price" : "12,490"
+		}]
+	}],
+	"images": {
+		"small": "img/products/19_medium_2.jpg",
+		"large" : [
+			"img/products/19_large_1.jpg",
+			"img/products/19_large_2.jpg",
+			"img/products/19_large_3.jpg",
+			"img/products/19_large_4.jpg",
+			"img/products/19_large_5.jpg",
+			"img/products/19_large_6.jpg"
+		],
+		"thumbs" : [
+			"img/products/19_thumb_1.jpg",
+			"img/products/19_thumb_2.jpg",
+			"img/products/19_thumb_3.jpg",
+			"img/products/19_thumb_4.jpg",
+			"img/products/19_thumb_5.jpg",
+			"img/products/19_thumb_6.jpg"
+		]
+	}
+},{
+	"category": "Mobiles",
+	"sub-category": "Smart Phones",
+	"product-id": 20,
+	"product-title": "LG W30 PRO with 16MP Front Camera (Midnight Blue, 4GB RAM, 64GB Storage, SD 632)",
+	"mrp": "10,666",
+	"discount" : "8%",
+	"details": "13MP + 16MP + 5MP triple rear camera | 16MP front facing camera \n 15.77 centimeters (6.21-inch) with 720 x 1520 pixels resolution \n Memory, Storage & SIM: 4GB RAM |64GB internal memory expandable up to 512GB | Dual SIM (nano+nano) dual-standby (4G+4G) 2+1 Card Slot \n Android v9 Pie operating system with 1.8GHz Qualcomm Snapdragon 632 octa core processor \n 4050mAH Non-removable lithium-polymer battery \n 1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase \n Box also includes: Charger, Quick Start Guide, USB Data Cable, SIM Ejector Pin",
+	"features" : {
+		"RAM" : [4],
+		"Camera" : 16,
+		"Battery" : 4050,
+		"Processor" : "LG",
+		"Screen Size" : 6.21,
+		"Storage" : [64],
+		"Rating" : 3,
+		"Brand" : "LG",
+		"Reviews" : 789
+	},
+	"varients": [{
+		"type": "Color",
+		"value": [{
+			"id": "20_1",
+			"value": "Midnight Blue"
+		}]
+	},{
+		"type": "RAM",
+		"value": [{
+			"id": "20_2",
+			"value": "4GB, 64GB",
+			"price" : "10,666"
+		}]
+	}],
+	"images": {
+		"small": "img/products/20_medium_2.jpg",
+		"large" : [
+			"img/products/20_large_1.jpg",
+			"img/products/20_large_2.jpg",
+			"img/products/20_large_3.jpg",
+			"img/products/20_large_4.jpg",
+			"img/products/20_large_5.jpg",
+			"img/products/20_large_6.jpg"
+		],
+		"thumbs" : [
+			"img/products/20_thumb_1.jpg",
+			"img/products/20_thumb_2.jpg",
+			"img/products/20_thumb_3.jpg",
+			"img/products/20_thumb_4.jpg",
+			"img/products/20_thumb_5.jpg",
+			"img/products/20_thumb_6.jpg"
+		]
+	}
+}]
+

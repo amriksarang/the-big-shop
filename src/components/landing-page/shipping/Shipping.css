@@ -1,0 +1,56 @@
+.shipping{
+	display: flex;
+	padding-top: 40px;
+}
+
+.shipping img{
+	max-width: 20%;
+	height: auto;
+}
+
+
+.section4{
+	background-color: rgb(246,243,239);
+	height: auto;
+	padding-bottom: 100px;
+}
+
+.section4 li{
+	display: inline-block;
+	width: 30%;
+	text-align: center;
+	position: relative;
+}
+
+.section4 ul{
+	margin: 40px;
+}
+
+@media screen and (max-width: 725px) {
+	.section4 ul{
+		margin: 20px;
+	}
+}
+
+
+@media screen and (max-width: 600px) {
+	.section4 li{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+	}
+}
+
+
+
+.section4 li::after{
+	content: " ";
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	display: block;
+	border: 1px solid rgb(188, 76, 42);
+	width: 30px;
+	text-align: center;
+	margin-top: 20px;
+}

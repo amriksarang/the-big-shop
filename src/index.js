@@ -1,17 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import AppRoutes from './routes';
+//import './index.css';
+
+import { AppProvider } from './AppProvider';
+import { CartProvider } from './components/products/cart/CartProvider';
+import {UserProvider} from './components/user/UserProvider';
+
+const APP_ID = "the-big-shop-poikl";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <React.StrictMode>
+        <AppProvider appId={APP_ID}>
+            <UserProvider>
+                <CartProvider>
+                    <AppRoutes />
+                </CartProvider>
+            </UserProvider>
+        </AppProvider>
+    </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

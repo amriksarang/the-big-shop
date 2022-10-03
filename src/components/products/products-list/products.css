@@ -1,0 +1,153 @@
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+@media screen and (max-width: 400px){
+    .products-container{
+        font-size: 0.8rem;
+    }
+}
+
+.products-container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 500px){
+    .products-container{
+        width: 100%;
+    }
+    .products-list{
+        margin-left: 5px;
+    }
+}
+
+.search-tool{
+    flex-basis: 20%;
+    border: 1px solid;
+}
+
+.products-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 10px;
+    flex-basis: 80%; /* if this is not provided the auto arrangement will not work */
+    margin-left: 20px;
+    align-self: start;
+}
+
+@media screen and (max-width: 500px){
+    .products-list{
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+@media screen and (max-width: 350px){
+    .products-list{
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+}
+
+.product img{
+    display: block;
+    height: auto;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.star-color{
+    color: gold;
+}
+
+.product{
+    padding: 20px;
+    border: 1px solid rgb(213,143,122, 0.8);
+    border-radius: 10px;
+    height: 100%;
+    text-align: center;
+}
+
+.product-title{
+    margin-top: 10px;
+}
+
+.product-prices{
+    display: flex;
+    align-items: center;
+}
+
+.mrp-price{
+    display: inline-block;
+    font-size: 0.9rem;
+    text-decoration: line-through;
+    margin-left: 1rem;
+}
+
+.discounted-price{
+    display: inline-block;
+    
+}
+
+.discount-percentage{
+    border: 1px solid grey;
+    border-radius: 2px;
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+
+.product-ratings{
+    position: relative;
+    width: 65px;
+    display: inline-block;
+    height: 20px;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+.empty-stars{
+    font-size: 1rem;
+}
+
+.empty-stars::before{
+    content: "\2606\2606\2606\2606\2606";
+    position: absolute;
+    display: inline-block;
+    left: 0;
+}
+
+.filled-stars{
+    font-size: 1rem;
+    color: gold;
+    overflow: hidden;
+}
+
+.filled-stars::before{
+    content: "\2605\2605\2605\2605\2605";
+    position: absolute;
+    overflow: hidden;
+    width: calc(var(--width));
+    left: 0;
+    top: 0;
+}
+
+
+.rating-reviews{
+    font-size: 0.8rem;
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+}
+
+.no-data-found-or-loading{
+    text-align: center;
+}
+
+.spinner{
+    font-size: 40px;
+}

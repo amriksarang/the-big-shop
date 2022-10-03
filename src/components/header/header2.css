@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+html{
+    color: rgb(188, 76, 42);
+	font-family: "Lato", sans-serif;
+}
+
+h2{
+	padding: 30px;
+	text-align: center;
+	color: white;
+	z-index: 10;
+	text-transform: uppercase;
+	margin-top: 50px;
+}
+
+nav{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hamburger-icon{
+	display: none;
+}
+
+.search{
+    display: flex;
+}
+
+.search-box{
+    border: none;
+    border-bottom: 1px solid rgb(188, 76, 42);
+    padding: 5px 10px;
+    padding-left: 25px;
+    vertical-align: middle;
+    outline: none;
+}
+
+.search-box::placeholder{
+    color:rgb(188, 76, 42);
+}
+
+.search-icon{
+    margin-right: -20px;
+    margin-bottom: -5px;
+    z-index: 2;
+    position: relative;
+    fill: rgb(188, 76, 42);
+    vertical-align: middle;
+}
+
+
+.social{
+    display: flex;
+}
+
+.social svg{
+    fill: rgb(188, 76, 42);
+    height: 24px;
+    width: 24px;
+}
+
+.user-login{
+    display: flex;
+    margin-left: 50px;
+}
+
+ul{
+    list-style: none;
+}
+
+.social .login-img{
+    height: 22px;
+    width: 22px;
+    vertical-align: middle;
+    margin-left: 15px;
+}
+
+.social li{
+    padding-right: 10px;
+}
+
+.instagram-icon{
+    height: 28px;
+    width: 28px;
+}
+
+.login-text{
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.nav-links{
+    position: relative;
+    margin-left: 50px;
+    height: 50px;
+    padding: 20px;
+    z-index: 100;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: unset;
+}
+
+
+@media screen and (max-width: 830px){
+    .social > li{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	
+	.nav{
+		flex-wrap: wrap;
+	}
+	
+	
+	/*
+	.user-login li:last-child{
+		display: none;
+	}*/
+	
+	
+	.hamburger-icon{
+		display: block;
+	}
+	
+	.search{
+		order: 4;
+		flex-basis: 100%;
+		padding-top: 10px;
+	}
+	
+	.search-box{
+		width: 100%;
+	}
+	
+	.search li:last-child{
+		width: 100%;
+	}
+	
+	.login-text{
+		/*display: none;*/
+	}
+
+    .social{
+        width: 100%;
+    }
+
+    .user-login{
+        margin-left: 0;
+        justify-content: space-between;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .social li{
+        padding-right: 0;
+    }
+}

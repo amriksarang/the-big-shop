@@ -1,0 +1,24 @@
+.search-tool-items{
+    padding: 20px;
+}
+
+.search-tool-item{
+    padding: 15px 0;
+
+}
+
+.feature-value{
+    display: inline-block;
+    width: 80%;
+    margin-left: 10px;
+}
+
+.search-tool-item p{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.search-tool-item p input{
+    display: inline-block;
+}

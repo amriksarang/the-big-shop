@@ -1,0 +1,22 @@
+.section3{
+	height: auto;
+}
+
+.highlighted-product{
+	display: flex;
+	background-color: rgb(234,229,235);
+}
+
+
+
+.highlighted-product-title{
+	font-size: 30px;
+	text-align: center;
+	width: 50%;
+	align-self: center;
+}
+
+.highlighted-product-image{
+	display: block;
+	width: 50%;
+}

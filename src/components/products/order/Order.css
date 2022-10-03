@@ -1,0 +1,54 @@
+.order-container{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.order-container h4{
+    margin-bottom: 20px;
+}
+
+.order-container li{
+    display: flex;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.house-details{
+    margin-left: 30px;
+}
+
+.address-container button{
+    margin-left: 30px;
+    align-self: center;
+}
+
+.address-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment-item{
+    margin: 15px 0;
+}
+
+.payment-item label{
+    display: inline-block;
+    width: 100%;
+    max-width: 100px;
+    text-align: left;
+}
+
+.payment-item input{
+    display: inline-block !important;
+    width: 100%;
+    max-width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 5px;
+}
+
+.credit-card-form button{
+    margin-left: 0;
+}

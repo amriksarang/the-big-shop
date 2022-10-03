@@ -1,0 +1,10 @@
+.thankyou-container{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.thankyou-container h2{
+    color: brown;
+}
