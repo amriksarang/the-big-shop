@@ -13,6 +13,8 @@ const Login = () => {
     const [password, setPassword] = useState("");
     const [errorMessage, setErrorMessage] = useState();
     const [isLoginError, setIsLoginError] = useState(false);
+    const [emailError, setEmailError] = useState(false);
+    const [passwordError, setPasswordError] = useState(false);
 
     let navigate = useNavigate();
     const app = React.useContext(AppContext).app;
@@ -24,7 +26,31 @@ const Login = () => {
             navigate(-1) ;
     }, [app]);
 
+    const invalidForm = () => {
+        let regex = /^[\w\d\._]+@[a-zA-Z_]+?\.[a-zA-Z]{2,20}$/;
+        let isError = false;
+
+        if(!regex.test(email)){
+            setEmailError(true);
+            isError = true;
+        }else{
+            setEmailError(false);
+        }
+
+        if(password.trim().length === 0){
+            setPasswordError(true);
+            isError = true;
+        }else{
+            setPasswordError(false);
+        }
+
+        return isError;
+    }
+
     const login = () => {
+
+        if(invalidForm())
+            return;
         
         console.log("calling realm");
         try{
@@ -55,13 +81,16 @@ const Login = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
         />
-        <label htmlFor="password">Password</label>
+        {emailError && <p className='error-field'>Incorrect email pattern</p>}
+
+        <label htmlFor="password">Password</label>        
         <input
             id="password"
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
         />
+        {passwordError && <p className='error-field'>Required Field</p>}
         <button className='product-detail-add-button' onClick={login}>Log In</button>
         {
             isLoginError && <p>{errorMessage}</p>

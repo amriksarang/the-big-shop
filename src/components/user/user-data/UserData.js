@@ -18,6 +18,8 @@ const UserData = () => {
     const [isEditAddress, setIsEditAddress] = useState(false);
     const [isAddAddress, setIsAddAddress] = useState(false);
 
+    const [userFormErrors, setUserFormErrors] = useState({});
+    const [addressFormErrors, setAddressFormErrors] = useState({});
     
     const [mongoDB, setMongoDB] = useState(null);
     const [useDataCollection, setUseDataCollection] = useState(null);
@@ -57,6 +59,24 @@ const UserData = () => {
     }
     
 
+    const handleFormErrors = (name, callback) => {
+        const form = document.getElementById(name);
+        const errors = {};
+        for(let element of form.elements){
+            if(element.type === "text") {
+                if(element.value.trim() === "")
+                    errors[element.id] = true;
+            }
+        }
+        callback(errors);
+        
+        if(Object.keys(errors).length > 0)
+            return false;
+        else
+            return true;
+
+    }
+
 
 
     useEffect(() => {
@@ -71,6 +91,9 @@ const UserData = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
+
+        if(!handleFormErrors("userDetail", setUserFormErrors))
+            return;
         
         setIsEditPersonalDetailsPending(true);
         
@@ -134,7 +157,7 @@ const UserData = () => {
                 { userId: app.currentUser.id }, 
                 { $set: { 
                     addresses: addresses
-                } } 
+                } } , {upsert: true}
             );
             await app.currentUser.refreshCustomData();
             cancelEditAddress();
@@ -154,6 +177,10 @@ const UserData = () => {
 
     const editAddress = (event) => {
         event.preventDefault();        
+
+        if(!handleFormErrors("addressDetail", setAddressFormErrors))
+            return;
+
         setIsAddAddress(true);            
     }
 
@@ -194,22 +221,26 @@ const UserData = () => {
 
         
         { (isEditPersonalDetails || !customData?.firstname) && 
-            <form className="user-detail-form">
+            <form id="userDetail" className="user-detail-form">
                 <div className="form-item">
                     <label htmlFor="first-name">First Name</label>
                     <input id="first-name" type="text" value={firstName} onChange={(e) => setFirstName(e.target.value)} required pattern=".*\S.*"/>
+                    {userFormErrors["first-name"] ? <p className="form-error-field">Required Field</p> : ""}
                 </div>
                 <div className="form-item">
                     <label htmlFor="last-name">Last Name</label>
                     <input id="last-name" type="text" value={lastName} onChange={(e) => setLastName(e.target.value)} required pattern=".*\S.*"/>
+                    {userFormErrors["last-name"] ? <p className="form-error-field">Required Field</p> : ""}
                 </div>
                 <div className="form-item">
                     <label htmlFor="primary-phone">Primary Phone</label>
                     <input id="primary-phone" type="text" value={primaryPhone} onChange={(e) => setPrimaryPhone(e.target.value)} required pattern=".*\S.*"/>
+                    {userFormErrors["primary-phone"] ? <p className="form-error-field">Required Field</p> : ""}
                 </div>
                 <div className="form-item">
                     <label htmlFor="alternate-phone">Alternate phone</label>
                     <input id="alternate-phone" type="text" value={alternatePhone} onChange={(e) => setAlternatePhone(e.target.value)} required pattern=".*\S.*"/>
+                    {userFormErrors["alternate-phone"] ? <p className="form-error-field">Required Field</p> : ""}
                 </div>
                 <button className='product-detail-add-button' onClick={handleSubmit} disabled={isEditPersonalDetailsPending} style={isEditPersonalDetailsPending ? {backgroundColor: 'lightgray'} : {} }>Submit</button>        
                 <button className='product-detail-add-button' onClick={cancelEditPersonalDetails} disabled={isEditPersonalDetailsPending} style={isEditPersonalDetailsPending ? {backgroundColor: 'lightgray'} : {} }>Cancel</button>        
@@ -237,26 +268,31 @@ const UserData = () => {
         
         {
             (isEditAddress || isAddAddress) && 
-                <form className="user-detail-form">
+                <form id="addressDetail" className="user-detail-form">
                     <div className='form-item'>
                         <label htmlFor="houseno" >House No </label>
                         <input id="houseno" type="text" value={editableAddress?.houseno} onChange={(e) => setAddressField(e, "houseno")} required pattern=".*\S.*"/>
+                        {addressFormErrors.houseno ? <p className="form-error-field">Required Field</p> : ""}
                     </div>
                     <div className='form-item'>
                         <label htmlFor="street1">Street 1 </label>
                         <input id="street1" type="text" value={editableAddress?.street1} onChange={(e) => setAddressField(e, "street1")} required pattern=".*\S.*"/>
+                        {addressFormErrors.street1 ? <p className="form-error-field">Required Field</p> : ""}
                     </div>
                     <div className='form-item'>
                         <label htmlFor="street2">Street 2</label>
                         <input id="street2" type="text" value={editableAddress?.street2} onChange={(e) => setAddressField(e, "street2")} required pattern=".*\S.*"/>
+                        {addressFormErrors.street2 ? <p className="form-error-field">Required Field</p> : ""}
                     </div>
                     <div className='form-item'>
                         <label htmlFor="city">City</label>
                         <input id="city" type="text"  value={editableAddress?.city} onChange={(e) => setAddressField(e, "city")} required pattern=".*\S.*"/>
+                        {addressFormErrors.city ? <p className="form-error-field">Required Field</p> : ""}
                     </div>
                     <div className='form-item'>
                         <label htmlFor="state">State </label>
                         <input id="state" type="text"  value={editableAddress?.state} onChange={(e) => setAddressField(e, "state")} required pattern=".*\S.*"/>                                
+                        {addressFormErrors.state ? <p className="form-error-field">Required Field</p> : ""}
                     </div>                
                     <button className='product-detail-add-button' onClick={editAddress} > Save Address </button>
                     <button className='product-detail-add-button' onClick={cancelEditAddress}>Cancel</button>

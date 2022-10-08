@@ -55,8 +55,14 @@
     margin: 30px 0;
 }
 
+.form-error-field{
+    color: red;
+    font-size: 10px;
+}
+
 @media screen and (max-width: 317px){
     .go-to-cart-button{
         margin-top: 20px;
     }
 }
+
