@@ -10,8 +10,10 @@ const SearchTool = ({setSearchData}) => {
         
         let value = e.target.getAttribute("data-search-value");
 
-        if(Number.isInteger(parseInt(value)))
+        
+        if(value.indexOf("-") === -1 && Number.isInteger(parseInt(value)))
             value = parseInt(e.target.getAttribute("data-search-value"));
+
 
         if(e.target.checked){
             
@@ -24,13 +26,13 @@ const SearchTool = ({setSearchData}) => {
                         value: value
                     }
                 ];
-                console.log("checked", val);
+                
                 return val});
         }else{
             setSearchData(data => {
                 
                 const val = data.filter( item => item.value !== value);
-                console.log("unchecked", val)
+                
                 return val;
             });
         }

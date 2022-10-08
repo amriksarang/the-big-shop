@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, useNavigate, NavLink } from 'react-router-dom';
 import { CartContext } from '../products/cart/CartProvider';
 import './header2.css';
 import { UserContext } from '../user/UserProvider';
@@ -7,9 +7,12 @@ import { UserContext } from '../user/UserProvider';
 function Header() {
 
     const [isUserLoggedIn, setIsUserLoggedIn] = useState(false);
+    const [searchTerm, setSearchTerm] = useState("");
 
     const cart = React.useContext(CartContext);  
     const userContext = React.useContext(UserContext);
+
+    const navigate = useNavigate();
 
 
     useEffect(() => {
@@ -28,13 +31,33 @@ function Header() {
         return 0;
     }
 
+    const handleClick = () => {
+
+        if(searchTerm.trim().length === 0)
+            return;
+
+        if(!searchTerm.match(/^[A-Za-z0-9\s]+$/)){
+            return;
+        }
+
+        navigate("/mobiles?search="+searchTerm);
+    }
+
+    const handerEnterKeyInInputField = (e) => {
+        if(e.key === 'Enter') {
+            handleClick();        
+        }
+    }
+
     return (<>
         <nav>
             <div className="nav">
                 <svg className="hamburger-icon" fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px"><path d="M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z"/></svg>
                 <ul className="search">
-                    <li><svg className="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path fill="white" d="M0 0h24v24H0z"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg></li>
-                    <li><input type="text" name="search" className="search-box" placeholder="Search..."/></li>
+                    <li>                        
+                        <svg onClick={handleClick}  className="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px"><path fill="white" d="M0 0h24v24H0z"/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>                        
+                    </li>
+                    <li><input onKeyDown={handerEnterKeyInInputField} value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} type="text" name="search" className="search-box" placeholder="Mobile Search Only..." required pattern=".*\S.*"/></li>
                 </ul>
                 <Link to="/"><img src="img/logo.png" alt="logo"/></Link>
                 <ul className="social">

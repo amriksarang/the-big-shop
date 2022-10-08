@@ -13,7 +13,7 @@ const UserData = () => {
     const [isEditPersonalDetails, setIsEditPersonalDetails] = useState(false);
     const [isEditPersonalDetailsPending, setIsEditPersonalDetailsPending] = useState(false);
 
-    const [editableAddress, setEditableAddress] = useState();
+    const [editableAddress, setEditableAddress] = useState(null);
     const [addressNumberInArray, setAddressNumberInArray] = useState();
     const [isEditAddress, setIsEditAddress] = useState(false);
     const [isAddAddress, setIsAddAddress] = useState(false);
@@ -42,7 +42,7 @@ const UserData = () => {
     useEffect(() => {      
 
         if(app.currentUser && app.currentUser.providerType === "anon-user"){         
-            console.log("anonymous");
+            
             navigate("/login");
         }
 
@@ -197,19 +197,19 @@ const UserData = () => {
             <form className="user-detail-form">
                 <div className="form-item">
                     <label htmlFor="first-name">First Name</label>
-                    <input id="first-name" type="text" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
+                    <input id="first-name" type="text" value={firstName} onChange={(e) => setFirstName(e.target.value)} required pattern=".*\S.*"/>
                 </div>
                 <div className="form-item">
                     <label htmlFor="last-name">Last Name</label>
-                    <input id="last-name" type="text" value={lastName} onChange={(e) => setLastName(e.target.value)} />
+                    <input id="last-name" type="text" value={lastName} onChange={(e) => setLastName(e.target.value)} required pattern=".*\S.*"/>
                 </div>
                 <div className="form-item">
                     <label htmlFor="primary-phone">Primary Phone</label>
-                    <input id="primary-phone" type="text" value={primaryPhone} onChange={(e) => setPrimaryPhone(e.target.value)} />
+                    <input id="primary-phone" type="text" value={primaryPhone} onChange={(e) => setPrimaryPhone(e.target.value)} required pattern=".*\S.*"/>
                 </div>
                 <div className="form-item">
                     <label htmlFor="alternate-phone">Alternate phone</label>
-                    <input id="alternate-phone" type="text" value={alternatePhone} onChange={(e) => setAlternatePhone(e.target.value)} />
+                    <input id="alternate-phone" type="text" value={alternatePhone} onChange={(e) => setAlternatePhone(e.target.value)} required pattern=".*\S.*"/>
                 </div>
                 <button className='product-detail-add-button' onClick={handleSubmit} disabled={isEditPersonalDetailsPending} style={isEditPersonalDetailsPending ? {backgroundColor: 'lightgray'} : {} }>Submit</button>        
                 <button className='product-detail-add-button' onClick={cancelEditPersonalDetails} disabled={isEditPersonalDetailsPending} style={isEditPersonalDetailsPending ? {backgroundColor: 'lightgray'} : {} }>Cancel</button>        
@@ -219,7 +219,7 @@ const UserData = () => {
         
         {
             addresses?.map((element, index) => {
-                            console.log(element);
+                            
                 return element && addressNumberInArray !== index && 
                         <div key={element._id} className="user-details">
                             <div className='user-addresses'>
@@ -240,23 +240,23 @@ const UserData = () => {
                 <form className="user-detail-form">
                     <div className='form-item'>
                         <label htmlFor="houseno" >House No </label>
-                        <input id="houseno" type="text" value={editableAddress?.houseno} onChange={(e) => setAddressField(e, "houseno")}/>
+                        <input id="houseno" type="text" value={editableAddress?.houseno} onChange={(e) => setAddressField(e, "houseno")} required pattern=".*\S.*"/>
                     </div>
                     <div className='form-item'>
                         <label htmlFor="street1">Street 1 </label>
-                        <input id="street1" type="text" value={editableAddress?.street1} onChange={(e) => setAddressField(e, "street1")}/>
+                        <input id="street1" type="text" value={editableAddress?.street1} onChange={(e) => setAddressField(e, "street1")} required pattern=".*\S.*"/>
                     </div>
                     <div className='form-item'>
                         <label htmlFor="street2">Street 2</label>
-                        <input id="street2" type="text" value={editableAddress?.street2} onChange={(e) => setAddressField(e, "street2")}/>
+                        <input id="street2" type="text" value={editableAddress?.street2} onChange={(e) => setAddressField(e, "street2")} required pattern=".*\S.*"/>
                     </div>
                     <div className='form-item'>
                         <label htmlFor="city">City</label>
-                        <input id="city" type="text"  value={editableAddress?.city} onChange={(e) => setAddressField(e, "city")}/>
+                        <input id="city" type="text"  value={editableAddress?.city} onChange={(e) => setAddressField(e, "city")} required pattern=".*\S.*"/>
                     </div>
                     <div className='form-item'>
                         <label htmlFor="state">State </label>
-                        <input id="state" type="text"  value={editableAddress?.state} onChange={(e) => setAddressField(e, "state")}/>                                
+                        <input id="state" type="text"  value={editableAddress?.state} onChange={(e) => setAddressField(e, "state")} required pattern=".*\S.*"/>                                
                     </div>                
                     <button className='product-detail-add-button' onClick={editAddress} > Save Address </button>
                     <button className='product-detail-add-button' onClick={cancelEditAddress}>Cancel</button>

@@ -151,3 +151,15 @@ a{
 .spinner{
     font-size: 40px;
 }
+
+.search-text{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-button{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}

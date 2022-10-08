@@ -19,7 +19,9 @@ export default class RangeQueryBuilder{
         let key = "features." + this.queryData["features"];
 
         this.queryData.values.forEach(item => {
+
             let values = item.split("-");
+
             let val1 = parseInt(values[0].trim());
             let val2 = parseInt(values[1].trim());
 

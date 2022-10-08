@@ -7,14 +7,15 @@ export default class QueryBuilder{
     #limit = 12;
     #skip = 0;
 
-    constructor(mergedQueriesData){
+    constructor(mergedQueriesData, searchTerms){
         this.mergedQueriesData = mergedQueriesData;
+        this.searchTerms = searchTerms;
     }
 
     getQuery(){
         let queries = [];
         let query = "";
-
+        
         this.mergedQueriesData.forEach( item => {
             let config = mobileFeatures.find(configItem => item.features === configItem.type);
             if(config.dataType === "array"){
@@ -31,11 +32,65 @@ export default class QueryBuilder{
         return this.wrapQuery(queries);
     }
 
+    getSearchParams(){
+        let pattern = this.searchTerms?.trim();
+
+        if(!pattern)
+            return;
+
+        if(pattern.length === 0 || pattern.length > 100){
+            return;
+        }
+
+        if(!pattern.match(/^[A-Za-z0-9\s]+$/)){
+            return;
+        }
+
+        let searchText = pattern.split(/(\s+)/);
+
+        return {
+            "$search": {
+                "index": "default",
+                "text": {
+                    "query": searchText,
+                    "path": {
+                        "wildcard": "*"
+                    }
+                }
+            }
+        };
+    }
+
+
     wrapQuery(queries){
 
-        if(queries.length === 0)
-            return [{"$skip" : this.#skip }, {"$limit": this.#limit }];
-        
+        let search = this.getSearchParams();
+
+        let query = [];
+
+        if(search){
+            query.push(search);
+        }
+
+        if(queries.length === 0){
+            query.push({"$skip" : this.#skip });
+            query.push({"$limit": this.#limit });
+            return query;
+        }
+            
+        query.push({
+            "$match" : {
+                "$and": queries
+            }
+        });
+
+        query.push({"$skip" : this.#skip });
+        query.push({"$limit": this.#limit });
+
+        return [
+            ...query
+        ];
+        /*
         return  [
             {
                 "$match" : {
@@ -44,6 +99,56 @@ export default class QueryBuilder{
             },
             {"$skip" : this.#skip },
             {"$limit": this.#limit }
-        ];
+        ];*/
     }
 }
+
+/*
+
+ const query = [
+                {
+                  "$search": {
+                    "index": "default",
+                    "text": {
+                      "query": searchText,
+                      "path": {
+                        "wildcard": "*"
+                      }
+                    }
+                  }
+                }
+            ];
+
+const query = [
+                {
+                    "$search": {
+                        "index": "default",
+                        "text": {
+                            "query": searchText,
+                            "path": {
+                                "wildcard": "*"
+                            }
+                        }
+                    }
+                },
+                {
+                    "$match": {
+                        "$and": [
+                            {
+                                "$or": [
+                                    {
+                                        "features.RAM": {
+                                            "$elemMatch": {
+                                                "$eq": 4
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            
+                        ]
+                    }
+                }
+                
+            ];
+*/

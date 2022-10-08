@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 
 import './products.css';
 import SearchTool from '../search-tool/SearchTool';
@@ -11,11 +11,14 @@ const ProductsList = () => {
     const [noDataFound, setNoDataFound] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
     const [searchData, setSearchData] = useState([]);
-            // [ { features: "Camera" , value: "20 - 40"} ,  { features: "Camera" , value: "40 - 60"} , { { features: "RAM" , value: 20} }]
-
+    const [searchParams, setSearchParams] = useSearchParams();
     const [mongoDB, setMongoDB] = useState(null);
 
+    // [ { features: "Camera" , value: "20 - 40"} ,  { features: "Camera" , value: "40 - 60"} , { { features: "RAM" , value: 20} }]
+
+
     const app = React.useContext(AppContext).app;
+
 
     const mergeQueriesData = () => {
         const mergedQueriesData = [];
@@ -54,7 +57,7 @@ const ProductsList = () => {
                     mergedQueriesData.push( { "features": item.features, values : [item.value]  } );
                 }
             });
-            let query = new QueryBuilder(mergedQueriesData).getQuery();
+            let query = new QueryBuilder(mergedQueriesData, searchParams.get("search")).getQuery();
             
             return query;
     }
@@ -71,16 +74,6 @@ const ProductsList = () => {
         
     }, [app]);
 
-
-    useEffect(() => {
-        setIsLoading(false);
-        
-        if(productsList && productsList.length === 0)
-            setNoDataFound(true);
-        else
-            setNoDataFound(false);
-        
-    }, [productsList, setProductsList]);
 
 
     useEffect(() => {        
@@ -103,7 +96,22 @@ const ProductsList = () => {
         
         getProducts();
 
-    }, [searchData, setSearchData, mongoDB, setMongoDB]);
+    }, [searchData, setSearchData, mongoDB, setMongoDB, searchParams]);
+
+
+    useEffect(() => {
+        setIsLoading(false);
+        
+        if(productsList && productsList.length === 0)
+            setNoDataFound(true);
+        else
+            setNoDataFound(false);
+        
+    }, [productsList, setProductsList]);
+
+    const clearSearch = () => {
+        setSearchParams("");
+    }
 
 
     const getProducts = () => {
@@ -139,6 +147,9 @@ const ProductsList = () => {
         <>  
             {
                 isLoading && <p className='no-data-found-or-loading'><i className="spinner fa fa-spinner fa-spin"></i>&nbsp;Loading...</p>
+            }
+            {
+                searchParams.get("search") && <p className='search-text'>You searched for {searchParams.get("search")}. <button onClick={clearSearch} className='search-button'>x Clear</button></p>
             }
             {                
                     <div className="products-container">                        
