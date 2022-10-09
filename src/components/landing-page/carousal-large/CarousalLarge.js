@@ -11,7 +11,7 @@ const CarousalLarge = () => {
 
     return (
         <section className="section1" >
-            <h2 className="section1-title">Upto 25% off on premium phones such as Realme, Samsung, Oppo</h2>
+            <h2 className="section1-title">Click on mobiles in navigation above to go to mobiles page. <br/><br/>Upto 25% off on premium phones such as Realme, Samsung, Oppo</h2>
             <div className="overlay">
                 <div className="container-large">
                     <div className="dots"></div>

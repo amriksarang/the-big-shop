@@ -119,6 +119,11 @@ ul{
     color: unset;
 }
 
+.highlight-mobile::after{
+    content: "";
+    display: block;
+    border: 1px solid black;
+}
 
 @media screen and (max-width: 830px){
     .social > li{

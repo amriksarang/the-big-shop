@@ -103,7 +103,7 @@ function Header() {
             <li>All</li>
             <li>Offers</li>
             <li>Grocery</li>
-            <li><NavLink to="/mobiles">Mobiles</NavLink></li>
+            <li><NavLink to="/mobiles"><span className="highlight-mobile">Mobiles</span></NavLink></li>
             <li>Fashion</li>
             <li>Electronics</li>
             <li>Appliances</li>

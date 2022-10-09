@@ -45,8 +45,7 @@
     position: absolute;
     width: 30%;
     height: 30%;
-    /*background-color: aliceblue;*/
-    background-color: green;
+    background-color: aliceblue;
     opacity: 1;
 }
 
@@ -150,6 +149,10 @@
     justify-content: center;
     align-items: center;
     margin-left: 10px;
+}
+
+.product-detail-add-button:active{
+    background-color: grey;
 }
 
 @media  screen and (max-width: 600px){
