@@ -5,14 +5,21 @@ export const AppContext = React.createContext();
 
 export const AppProvider = ({appId, children}) => {
     const [app, setApp] = useState(new Realm.App(appId));
+    const [user, setUser] = useState(null);
 
+    useEffect(() => {
+        setApp(new Realm.App(appId));
+      }, [appId]);
+  
 
     useEffect(() => {
         
         const credentials = Realm.Credentials.anonymous();
 
-        const anonymousLogin = async () => {            
-            await app.logIn(credentials);
+        const anonymousLogin = async () => {           
+            
+            const currentUser = await app.logIn(credentials);
+            setUser(currentUser);
         }
 
         anonymousLogin();
@@ -20,12 +27,9 @@ export const AppProvider = ({appId, children}) => {
     }, [app]);
 
 
-    useEffect(() => {
-      setApp(new Realm.App(appId));
-    }, [appId]);
-
+ 
     return (
-        <AppContext.Provider value={ {app}}>
+        <AppContext.Provider value={ {app, user}}>
             {children}
         </AppContext.Provider>
     );

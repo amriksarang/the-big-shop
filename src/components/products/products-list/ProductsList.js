@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useSearchParams } from "react-router-dom";
+import * as Realm from "realm-web";
 
 import './products.css';
 import SearchTool from '../search-tool/SearchTool';
@@ -18,6 +19,7 @@ const ProductsList = () => {
 
 
     const app = React.useContext(AppContext).app;
+    const user = React.useContext(AppContext).user;
 
 
     const mergeQueriesData = () => {
@@ -66,13 +68,14 @@ const ProductsList = () => {
     useEffect(() => {
 
         const getDatabase = async () => {
-            let database = app.currentUser.mongoClient("mongodb-atlas");
+            
+            let database = await user?.mongoClient("mongodb-atlas");
             setMongoDB( database );
         }
 
         getDatabase();
         
-    }, [app]);
+    }, [app, user]);
 
 
 
@@ -83,6 +86,7 @@ const ProductsList = () => {
         const getProducts = async () => {
             
             if (!mongoDB) {
+                console.log("mongodb null in productsList");
                 return;
             }
             console.log("calling realm");
@@ -96,7 +100,7 @@ const ProductsList = () => {
         
         getProducts();
 
-    }, [searchData, setSearchData, mongoDB, setMongoDB, searchParams]);
+    }, [searchData, mongoDB, searchParams]);
 
 
     useEffect(() => {

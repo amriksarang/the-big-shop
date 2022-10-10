@@ -16,26 +16,42 @@ const ProductDetail = () => {
     const [quantity, setQuantity] = useState(1);
     const [position, setPosition] = useState({});
 
+    const [mongoDB, setMongoDB] = useState(null);
+
     const app = React.useContext(AppContext).app;
+    const user = React.useContext(AppContext).user;
     const cart = React.useContext(CartContext);
 
-    let database = app.currentUser.mongoClient("mongodb-atlas");
-    const productsCollection =  database.db("the-big-shop").collection("products");
+
+    useEffect(() => {
+
+        const getDatabase = async () => {
+            
+            let database = await user?.mongoClient("mongodb-atlas");
+            setMongoDB( database );
+        }
+
+        getDatabase();
+        
+    }, [app, user]);
 
 
     useEffect( () => {
         
         const func = async () => {
+            const id = searchParams.get("productId");
+            if(!id) return;
+
             console.log("calling realm");
-            let product = await productsCollection.findOne({
-                "product-id": parseInt(searchParams.get("productId"))
+            let product = await mongoDB?.db("the-big-shop").collection("products").findOne({
+                "product-id": parseInt(id)
             });
             
             setProduct(product);            
         }
 
         func();
-    }, [searchParams]);
+    }, [mongoDB, searchParams]);
 
 
     const handleVarients = (type, index, varient) => {
@@ -337,6 +353,9 @@ const ProductDetail = () => {
                 </div>
             </div>
         </>
+     }
+     {
+        !product && <p style={{textAlign: "center", marginTop: "20px"}}>Product Not Found</p>
      }
     
     </>
