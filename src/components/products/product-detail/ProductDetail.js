@@ -15,6 +15,8 @@ const ProductDetail = () => {
     const [varients, setVarients] = useState([]);
     const [quantity, setQuantity] = useState(1);
     const [position, setPosition] = useState({});
+    const [productNotFound, setProductNotFound] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
 
     const [mongoDB, setMongoDB] = useState(null);
 
@@ -40,14 +42,28 @@ const ProductDetail = () => {
         
         const func = async () => {
             const id = searchParams.get("productId");
-            if(!id) return;
+
+            if(!id) {
+                setProductNotFound(true); 
+                setIsLoading(false);
+                return;
+            } 
 
             console.log("calling realm");
             let product = await mongoDB?.db("the-big-shop").collection("products").findOne({
                 "product-id": parseInt(id)
             });
             
-            setProduct(product);            
+            if(!product && mongoDB) {                
+                setProductNotFound(true); 
+                setIsLoading(false);
+                return;
+            }
+
+            if(product) setIsLoading(false);
+
+            setProduct(product);
+            
         }
 
         func();
@@ -355,8 +371,12 @@ const ProductDetail = () => {
         </>
      }
      {
-        !product && <p style={{textAlign: "center", marginTop: "20px"}}>Product Not Found</p>
+        productNotFound && <p style={{textAlign: "center", marginTop: "20px"}}>Product Not Found</p>
      }
+
+    {
+        isLoading && <p className='no-data-found-or-loading'><i className="spinner fa fa-spinner fa-spin"></i>&nbsp;Loading...</p>
+    }
     
     </>
 

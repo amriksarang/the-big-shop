@@ -86,7 +86,6 @@ const ProductsList = () => {
         const getProducts = async () => {
             
             if (!mongoDB) {
-                console.log("mongodb null in productsList");
                 return;
             }
             console.log("calling realm");
@@ -104,12 +103,10 @@ const ProductsList = () => {
 
 
     useEffect(() => {
-        setIsLoading(false);
         
-        if(productsList && productsList.length === 0)
-            setNoDataFound(true);
-        else
-            setNoDataFound(false);
+        
+        if(productsList || productsList?.length === 0)
+            setIsLoading(false);
         
     }, [productsList, setProductsList]);
 
@@ -149,9 +146,7 @@ const ProductsList = () => {
 
     return (
         <>  
-            {
-                isLoading && <p className='no-data-found-or-loading'><i className="spinner fa fa-spinner fa-spin"></i>&nbsp;Loading...</p>
-            }
+            
             {
                 searchParams.get("search") && <p className='search-text'>You searched for {searchParams.get("search")}. <button onClick={clearSearch} className='search-button'>x Clear</button></p>
             }
@@ -160,6 +155,9 @@ const ProductsList = () => {
                         <SearchTool setSearchData={setSearchData} />
                         
                         <div className="products-list">
+                        {
+                            isLoading && <p className='no-data-found-or-loading' style={{textAlign: "center"}}><i className="spinner fa fa-spinner fa-spin"></i>&nbsp;Loading...</p>
+            }
                             {noDataFound && <p className='no-data-found-or-loading'>No results found, please try a different search</p>}
                             {productsList && productsList.length > 0 && getProducts()}
                         </div>
