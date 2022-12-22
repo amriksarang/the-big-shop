@@ -86,7 +86,7 @@ const Cart = () => {
 
         
         {
-            (!products || !products["products"] || products["products"].length === 0) && <p>Your cart is empty</p>
+            (!products || !products["products"] || products["products"].length === 0) && <p style={{textAlign: "center"}}>Your cart is empty</p>
         }
         </div>
         

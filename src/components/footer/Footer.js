@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <section className="section5">
 		<div className="footer">
-			<img src="./img/logo.png" alt="=logo"/>
+			<img src="./img/logo.png" alt="logo"/>
 			<ul>
 				<li>Home</li>
 				<li>Shop All</li>

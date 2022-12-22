@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { AppContext } from '../../../AppProvider';
 import * as Realm from "realm-web";
 import { UserContext } from '../UserProvider';
-import {handleAuthenticationError} from '../../../utils/utils';
+import {handleAuthenticationError, testEmail} from '../../../utils/utils';
 import {Link} from 'react-router-dom';
 import './Login.css';
 
@@ -27,10 +27,9 @@ const Login = () => {
     }, [app]);
 
     const invalidForm = () => {
-        let regex = /^[\w\d\._]+@[a-zA-Z_]+?\.[a-zA-Z]{2,20}$/;
         let isError = false;
 
-        if(!regex.test(email)){
+        if(!testEmail(email)){
             setEmailError(true);
             isError = true;
         }else{
@@ -81,7 +80,7 @@ const Login = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
         />
-        {emailError && <p className='error-field'>Incorrect email pattern</p>}
+        {emailError && <p className='error-field'>Please provide valid email</p>}
 
         <label htmlFor="password">Password</label>        
         <input

@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import { AppContext } from '../../AppProvider';
-import {handleAuthenticationError} from '../../utils/utils';
+import {handleAuthenticationError, testEmail} from '../../utils/utils';
 
 
 const RegisterUser = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [errorMessage, setErrorMessage] = useState();
-    const [isLoginError, setIsLoginError] = useState(false);
+    const [isRegisterError, setIsRegisterError] = useState(false);
 
     const [emailError, setEmailError] = useState(false);
     const [passwordError, setPasswordError] = useState(false);
@@ -17,23 +17,23 @@ const RegisterUser = () => {
     let navigate = useNavigate();
 
     const invalidForm = () => {
-        let regex = /^[\w\d\._]+@[a-zA-Z_]+?\.[a-zA-Z]{2,20}$/;
+        
         let isError = false;
-
-        if(!regex.test(email)){
+    
+        if(!testEmail(email)){
             setEmailError(true);
             isError = true;
         }else{
             setEmailError(false);
         }
-
+    
         if(password.trim().length === 0){
             setPasswordError(true);
             isError = true;
         }else{
             setPasswordError(false);
         }
-
+    
         return isError;
     }
 
@@ -51,7 +51,7 @@ const RegisterUser = () => {
             .catch(error => {
                 let errorMsg = handleAuthenticationError(error);                
                 setErrorMessage(errorMsg);
-                setIsLoginError(true);
+                setIsRegisterError(true);
             })
         
     };
@@ -76,7 +76,7 @@ const RegisterUser = () => {
         {passwordError && <p className='error-field'>Required Field</p>}
         <button className='product-detail-add-button' onClick={handleClick}>Register</button>
         {
-            isLoginError && <p className='error-field'>{errorMessage}</p>
+            isRegisterError && <p className='error-field'>{errorMessage}</p>
         }
     </div>
     

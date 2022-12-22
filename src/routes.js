@@ -12,16 +12,18 @@ import App from './components/App';
 import LandingPage from './components/landing-page/LandingPage';
 import Footer from './components/footer/Footer';
 import ThankYou from './components/products/thank-you/ThankYou';
+import FormEditor from './components/user/user-data/FormEditor';
 
 
 const AppRoutes = () => (
     <BrowserRouter>
-            <App />
+            <App/>
             <Routes>
+                
                 <Route exact path="/" element={<LandingPage/>}/>
                 {/*<Route exact path="/upload-products" element={<UploadProducts/>}/> */}
                 
-                <Route exact path="/mobiles" element={<ProductsList/>}/>
+                {<Route exact path="/mobiles" element={<ProductsList/>}/>}
                 <Route exact path="/register" element={<RegisterUser/>}/>
                 <Route exact path="/user" element={<UserData/>}/>
                 <Route exact path="/product" element={<ProductDetail/>}/>
@@ -30,6 +32,7 @@ const AppRoutes = () => (
                 <Route exact path="/login" element={<Login/>}/>
                 <Route exact path="/logout" element={<Logout/>}/>
                 <Route exact path="/thankyou" element={<ThankYou/>}/>
+                <Route exact path="/form" element={<FormEditor/>}/>
             </Routes>
             <Footer/>
     </BrowserRouter>

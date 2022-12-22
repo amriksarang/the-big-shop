@@ -1,5 +1,15 @@
 import * as Realm from "realm-web";
 
+export const testEmail = (email) => {
+    let regex = /^[\w\d\._]+@[a-zA-Z_]+?\.[a-zA-Z]{2,20}$/;
+
+    if(!regex.test(email)){
+        return false;
+    }
+
+    return true;
+}
+
 export const isPropertyNullOrUndefinedOrEmpty = (obj, key) => {
         
     if ( !(key in obj) || typeof obj[key] == "undefined"){

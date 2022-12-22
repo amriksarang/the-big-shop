@@ -4,6 +4,7 @@ import * as Realm from "realm-web";
 export const AppContext = React.createContext();
 
 export const AppProvider = ({appId, children}) => {
+	
     const [app, setApp] = useState(new Realm.App(appId));
     const [user, setUser] = useState(null);
 
@@ -11,13 +12,12 @@ export const AppProvider = ({appId, children}) => {
         setApp(new Realm.App(appId));
       }, [appId]);
   
-
+	
     useEffect(() => {
-        
+	        
         const credentials = Realm.Credentials.anonymous();
 
         const anonymousLogin = async () => {           
-            
             const currentUser = await app.logIn(credentials);
             setUser(currentUser);
         }
@@ -34,3 +34,4 @@ export const AppProvider = ({appId, children}) => {
         </AppContext.Provider>
     );
 }
+

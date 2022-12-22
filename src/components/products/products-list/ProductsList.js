@@ -1,26 +1,29 @@
-import React, { useState, useEffect } from 'react';
+import React, {useEffect, useState} from 'react';
 import { Link, useSearchParams } from "react-router-dom";
-import * as Realm from "realm-web";
 
-import './products.css';
 import SearchTool from '../search-tool/SearchTool';
 import QueryBuilder from '../../../utils/QueryBuilder';
-import { AppContext } from '../../../AppProvider';
 
+import {AppContext} from '../../../AppProvider';
+import {UserContext} from '../../user/UserProvider';
+
+import './products.css';
+ 
 const ProductsList = () => {
-    const [productsList, setProductsList] = useState(null);
+	const [productsList, setProductsList] = useState([]);
     const [noDataFound, setNoDataFound] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
     const [searchData, setSearchData] = useState([]);
     const [searchParams, setSearchParams] = useSearchParams();
-    const [mongoDB, setMongoDB] = useState(null);
+	const [mongoDB, setMongoDB] = useState(null);
+	
+	const context = React.useContext(AppContext);
+	const userContext = React.useContext(UserContext);
 
     // [ { features: "Camera" , value: "20 - 40"} ,  { features: "Camera" , value: "40 - 60"} , { { features: "RAM" , value: 20} }]
-
-
-    const app = React.useContext(AppContext).app;
-    const user = React.useContext(AppContext).user;
-
+	
+	const app = context.app;
+	const user = userContext.user;	
 
     const mergeQueriesData = () => {
         const mergedQueriesData = [];
@@ -63,43 +66,48 @@ const ProductsList = () => {
             
             return query;
     }
-    
-
-    useEffect(() => {
-
-        const getDatabase = async () => {
+	
+	useEffect(() => {
+		
+		const getDatabase = async () => {
             
             let database = await user?.mongoClient("mongodb-atlas");
+            //console.log("Userrrrr", user);
             setMongoDB( database );
+			
         }
-
-        getDatabase();
         
-    }, [app, user]);
+        user && getDatabase();
+		
+	}, [user]);
+	
 
 
 
-    useEffect(() => {        
-        
+	useEffect(() => {
+
         let query = mergeQueriesData();
 
-        const getProducts = async () => {
-            
-            if (!mongoDB) {
-                return;
-            }
+		const getProducts = async () => {
+
             console.log("calling realm");
-            const productsCollection =  mongoDB.db("the-big-shop").collection("products");
-            
-            const products = await productsCollection.aggregate(query);
+			const productsCollection =  mongoDB.db("the-big-shop").collection("products");
+			
+			const products = await productsCollection.aggregate(query);
+            if(!products || products.length === 0 ){
+                setNoDataFound(true);
+            }else{
+                setNoDataFound(false);
+            }
             
             setProductsList(products);
+			
+		}
+		
+		mongoDB && getProducts();
+		
+	}, [searchData, mongoDB, searchParams]);
 
-        }
-        
-        getProducts();
-
-    }, [searchData, mongoDB, searchParams]);
 
 
     useEffect(() => {
@@ -115,6 +123,7 @@ const ProductsList = () => {
     }
 
 
+
     const getProducts = () => {
 
         return productsList.map( product => {
@@ -128,32 +137,33 @@ const ProductsList = () => {
 
             return (
                 <Link to={`/product?productId=${product["product-id"]}`} key={product['product-title']}>
-                <div className="product" >
-                    <img src={product.images.small} alt={product['product-title']} />
-                    <div className="discounted-price">₹ {discountedPrice}&nbsp;</div>
-                    <div className="mrp-price">₹ {product.mrp}</div>
-                    <div className="product-title">{product['product-title']}</div>
-                    <div className="product-ratings">
-                        <div className="empty-stars">&nbsp;</div>
-                        <div className="filled-stars" style={style}></div>
+                    <div className="product">
+                        <img src={product.images.small} alt={product['product-title']} />
+                        <div className="discounted-price">₹ {discountedPrice}&nbsp;</div>
+                        <div className="mrp-price">₹ {product.mrp}</div>                                         
+                        <div className="product-title">{product['product-title']}</div>
+                        <div className="product-ratings">
+                            <div className="empty-stars">&nbsp;</div>
+                            <div className="filled-stars" style={style}></div>
+                        </div>
+                        <div className="rating-reviews">({product.features.Reviews})</div>
                     </div>
-                    <div className="rating-reviews">({product.features.Reviews})</div>
-                </div>
                 </Link>
-            );
+            )
+           
         });
     }
 
+
     return (
         <>  
-            
             {
                 searchParams.get("search") && <p className='search-text'>You searched for {searchParams.get("search")}. <button onClick={clearSearch} className='search-button'>x Clear</button></p>
             }
             {                
                     <div className="products-container">                        
-                        <SearchTool setSearchData={setSearchData} />
-                        
+                        {/*<SearchTool setSearchData={setSearchData} />*/}
+                        {/*<Link to="/product?productId=14">ProductName</Link>*/}
                         <div className="products-list">
                         {
                             isLoading && <p className='no-data-found-or-loading' style={{textAlign: "center"}}><i className="spinner fa fa-spinner fa-spin"></i>&nbsp;Loading...</p>
@@ -166,6 +176,14 @@ const ProductsList = () => {
             
         </>
     );
+
+
+	/*
+	return productsList.length > 0 && <ul className="products-list">
+	{productsList.map( item => <li  key={item["product-title"]}>{item["product-title"]}</li>)}
+	</ul>
+	*/
+	
 }
 
 export default ProductsList;
